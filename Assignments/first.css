@@ -1,0 +1,95 @@
+body{
+    background-color: aliceblue;
+    padding: 10px 50px;
+}
+
+.head .sign-up{
+    position: relative;
+    float:right ;
+    background-color: #436af7;
+    color: white;
+    border: 5px solid #436af7;
+    border-radius: 2px;
+}
+
+.head{
+    font-size: large;
+    padding: 20px 100px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main{
+    height: 500px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-image: url("https://eos.org/wp-content/uploads/2026/01/ocean-haze.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-text{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email input{
+    border: none;
+    padding: 12px 16px;
+    width: 420px;
+    background: white;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.email button{
+    padding: 12px 24px;
+    background-color: #436af7;
+    color: white;
+    border: 1px solid #436af7;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sign-up button{
+    padding: 4px 20px;
+    background-color: #436af7;
+    color: white;
+    border: 1px solid #436af7;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.email button:hover{
+    background-color: #3654d1;
+    border: 1px solid #3654d1;
+}
+.sign-up button:hover{
+    background-color: #3654d1;
+    border: 1px solid #3654d1;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    gap: 50px;
+    text-align: center;
+    font-size: large;
+}
