@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            text-align: center;
+            color: white;
+        }
+        .container{
+            background-color: aqua;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px;
+            grid-template-areas: 
+            "head   head    head"
+            "side   con1    con1"
+            "side   con2    con3"
+            "foot   foot    foot"
+            ;
+        }
+        
+
+        .head{
+            grid-area: head;
+        }
+        .sidebar{
+            grid-area: side;
+        }
+        .content1{
+            grid-area: con1;
+        }
+        .content2{
+            grid-area: con2;
+        }
+        .content3{
+            grid-area: con3;
+        }
+        .footer{
+            grid-area: foot;
+        }
+
+        .head,.sidebar,.content1,.content2,.content3,.footer{
+            background-color: blue;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content1">Content 1</div>
+        <div class="content2">Content 2</div>
+        <div class="content3">Content 3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
