@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            min-height: 600px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .box{
+            position: absolute;
+            bottom: 0;
+            background-color: #ff4d4d;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        .base{
+            font-size: 80px;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box"></div>
+    </div>
+    <div class="base">______________________</div>
+</body>
+</html>
